@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "postinstall": "chmod +x node_modules/.bin/vite",
+    "postinstall": "chmod +x node_modules/.bin/vite || true",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -20,6 +20,10 @@
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.12",
-    "vite": "^5.2.12"
+    "vite": "^5.2.12",
+    "cross-env": "^7.0.3"
+  },
+  "engines": {
+    "node": ">=22.16.0"
   }
 }
